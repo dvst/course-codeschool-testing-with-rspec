@@ -7,4 +7,9 @@ describe Zombie do
     # "expectation", not assertions
     zombie.name.should == 'Ash'
   end
+
+  it "has no brain" do
+    zombie = Zombie.new
+    zombie.brains.should < 1
+  end
 end
